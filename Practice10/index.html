@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+ 
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Note dApp</h1>
+        <p>You can write notes and read notes from smart-contract</p>
+          <br />
+        <label for="note"> Write note:</label>
+        <input type="text"id="note" />
+        <button onclick="setNote()">Set Note</button>
+        <button onclick="getNote()">Get Note</button>
+        <p>my note: <span id="result"> </span></p>
+    </div>
+</body>
+</html>
