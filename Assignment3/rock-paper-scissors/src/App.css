@@ -1,83 +1,91 @@
+/* Общее оформление страницы */
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background: url('https://i.pinimg.com/originals/d6/7a/90/d67a908adae56796efdcd1780dd97e33.jpg') no-repeat center center fixed;
+  background-size: cover; /* Фон будет покрывать весь экран */
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(40, 44, 52, 0.8); /* Прозрачный фон для заголовка */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #dcdcdc; /* Светлый текст */
+  border-radius: 8px; /* Добавление скругленных углов */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* App.css */
-
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-.header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
-
-.connect-wallet {
-  margin: 20px;
-}
-
+/* Кнопки */
 button {
   background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px;
+  color: #f9f9f9; /* Текст кнопки более ярким */
+  padding: 15px 30px;
+  margin: 15px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопок */
+  transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+button:hover {
+  background-color: #45a049; /* Потемнение кнопки при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+  transform: translateY(-3px); /* Легкое поднятие кнопки */
+}
+
+button:active {
+  background-color: #388e3c; /* Более темный цвет при клике */
+  transform: translateY(1px); /* Легкое сжатие кнопки */
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #c7c7c7; /* Цвет для неактивных кнопок */
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
-.game-actions {
-  margin: 20px;
+/* Стиль для заголовков */
+h1 {
+  font-size: 2.5em;
+  color: #ffffff; /* Белый цвет для заголовков */
+  margin-bottom: 20px;
 }
 
+/* Стиль для историй и других текстов */
 .game-history {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 .game-history li {
-  margin: 10px 0;
+  font-size: 1.2em;
+  color: #ffeb3b; /* Яркий желтый текст для истории игры */
+  margin: 15px 0;
+}
+
+/* Стиль для ссылок */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+}
+
+/* Для кнопок и элементов с градиентом */
+button.gradient-button {
+  background: linear-gradient(45deg, #4CAF50, #2c8c3e);
+  border-radius: 8px;
+}
+
+button.gradient-button:hover {
+  background: linear-gradient(45deg, #45a049, #388e3c);
 }
