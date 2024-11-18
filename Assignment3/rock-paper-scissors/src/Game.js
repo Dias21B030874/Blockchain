@@ -108,6 +108,7 @@ function Game({
               </button>
             </div>
           </div>
+          
         </>
       ) : (
         <div className="connect-wallet">
@@ -117,6 +118,7 @@ function Game({
         </div>
       )}
     </div>
+    
   );
 }
 

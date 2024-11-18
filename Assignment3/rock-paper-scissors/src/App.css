@@ -1,63 +1,60 @@
-/* Общее оформление страницы */
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
   background: url('https://i.pinimg.com/originals/d6/7a/90/d67a908adae56796efdcd1780dd97e33.jpg') no-repeat center center fixed;
-  background-size: cover; /* Фон будет покрывать весь экран */
+  background-size: cover; 
   padding: 20px;
 }
 
 .App-header {
-  background-color: rgba(40, 44, 52, 0.8); /* Прозрачный фон для заголовка */
+  background-color: rgba(40, 44, 52, 0.8); 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #dcdcdc; /* Светлый текст */
-  border-radius: 8px; /* Добавление скругленных углов */
+  color: #dcdcdc; 
+  border-radius: 8px;
 }
 
-/* Кнопки */
+
 button {
   background-color: #4CAF50;
-  color: #f9f9f9; /* Текст кнопки более ярким */
+  color: #f9f9f9;
   padding: 15px 30px;
   margin: 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопок */
-  transition: all 0.3s ease; /* Плавный переход для эффектов */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049; /* Потемнение кнопки при наведении */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень при наведении */
-  transform: translateY(-3px); /* Легкое поднятие кнопки */
+  background-color: #45a049;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-3px); 
 }
 
 button:active {
-  background-color: #388e3c; /* Более темный цвет при клике */
-  transform: translateY(1px); /* Легкое сжатие кнопки */
+  background-color: #388e3c;
+  transform: translateY(1px);
 }
 
 button:disabled {
-  background-color: #c7c7c7; /* Цвет для неактивных кнопок */
+  background-color: #c7c7c7; 
   cursor: not-allowed;
   box-shadow: none;
 }
 
-/* Стиль для заголовков */
 h1 {
   font-size: 2.5em;
-  color: #ffffff; /* Белый цвет для заголовков */
+  color: #ffffff; 
   margin-bottom: 20px;
 }
 
-/* Стиль для историй и других текстов */
 .game-history {
   list-style-type: none;
   padding: 0;
@@ -66,11 +63,10 @@ h1 {
 
 .game-history li {
   font-size: 1.2em;
-  color: #ffeb3b; /* Яркий желтый текст для истории игры */
+  color: #ffeb3b; 
   margin: 15px 0;
 }
 
-/* Стиль для ссылок */
 .App-link {
   color: #61dafb;
   text-decoration: none;
@@ -80,12 +76,11 @@ h1 {
   color: #21a1f1;
 }
 
-/* Для кнопок и элементов с градиентом */
 button.gradient-button {
   background: linear-gradient(45deg, #4CAF50, #2c8c3e);
   border-radius: 8px;
 }
 
 button.gradient-button:hover {
-  background: linear-gradient(45deg, #45a049, #388e3c);
+  background: linear-gradient(45deg, #45a049, #388e3c); 
 }
